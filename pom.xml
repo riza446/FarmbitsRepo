@@ -11,8 +11,9 @@
 	<groupId>com.jiratec.farmbits</groupId>
 	<artifactId>riza-farmbits-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>riza-farmbits-project</name>
-	<description>test project for farmbits in  Spring Boot</description>
+	<description>Test project for farmbits in  Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
 		 <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>

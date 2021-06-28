@@ -1,6 +1,7 @@
 package com.jiratec.farmbits.entity;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -13,6 +14,13 @@ import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
+
+/**
+ * @author Rizauddin Mohammad
+ * It is a category Entity class with
+ *  @OnetoMany relationship  with product Entity class 
+ * 
+ */
 
 @Entity(name = "category")
 @Getter
@@ -29,7 +37,7 @@ public class Category implements Serializable {
 	private String categoryName;
 
 	@OneToMany(mappedBy = "category", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	private Set<Product> products;
+	private Set<Product> products=new HashSet<>();
 
 	public Category() {
 	}
