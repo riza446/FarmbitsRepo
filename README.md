@@ -25,7 +25,7 @@ Here is what this little application demonstrates:
 * No need to install a container separately on the host just run using the ``java -jar`` command
 
 * Writing a RESTful service using annotation
-* for log and getter & setter   used  ``@Slf4j`` lombok
+* For log and getter & setter   used  ``@Slf4j`` lombok
 * *Spring Data* Integration with JPA/Hibernate with just a few lines of configuration and familiar annotations. 
 * Automatic CRUD functionality against the data source using Spring *Repository* pattern 
 
@@ -179,7 +179,7 @@ Content-Type: application/x-www-form-urlencoded
 categoryName:mobile
 }
 
-RESPONSE: HTTP 201 (Created)
+RESPONSE: HTTP 201 
 {
     "api": "addCategory",
     "message": "Successfully added",
@@ -200,7 +200,7 @@ providerName:John
 email:john@gmail.com
 }
 
-RESPONSE: HTTP 201 (Created)
+RESPONSE: HTTP 201 
 {
     "api": "addProvider",
     "message": "Successfully added",
@@ -226,7 +226,7 @@ Content-Type: application/json
     "categoryName":"mobile"
 }
 
-RESPONSE: HTTP 201 (Created)
+RESPONSE: HTTP 201 
 {
     "api": "addProduct",
     "message": "Successfully added",
